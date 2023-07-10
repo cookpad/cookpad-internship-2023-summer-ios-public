@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E09DEC8289268BD005CC56A /* PostRecipeHashtagsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E09DEC7289268BD005CC56A /* PostRecipeHashtagsRequest.swift */; };
+		1E09DECA28926987005CC56A /* post_recipe_hashtags.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E09DEC928926987005CC56A /* post_recipe_hashtags.json */; };
+		1E36D5D428927D05009DD683 /* AddRecipeHashtagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36D5D328927D05009DD683 /* AddRecipeHashtagsView.swift */; };
+		1E36D5D628928111009DD683 /* AddHashtagsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36D5D528928111009DD683 /* AddHashtagsButton.swift */; };
+		1E5FABFC287D563A000C20D9 /* MiniCookpadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FABFB287D563A000C20D9 /* MiniCookpadApp.swift */; };
+		1E5FABFE287D563A000C20D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FABFD287D563A000C20D9 /* ContentView.swift */; };
+		1E5FAC00287D563A000C20D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5FABFF287D563A000C20D9 /* Assets.xcassets */; };
+		1E5FAC03287D563A000C20D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5FAC02287D563A000C20D9 /* Preview Assets.xcassets */; };
+		1E5FAC0D287D563A000C20D9 /* MiniCookpadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FAC0C287D563A000C20D9 /* MiniCookpadTests.swift */; };
+		1E5FAC17287D563A000C20D9 /* MiniCookpadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FAC16287D563A000C20D9 /* MiniCookpadUITests.swift */; };
+		1E5FAC19287D563A000C20D9 /* MiniCookpadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FAC18287D563A000C20D9 /* MiniCookpadUITestsLaunchTests.swift */; };
+		1EC972B9289106C400985624 /* Hashtag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC972B8289106C400985624 /* Hashtag.swift */; };
+		1EE1A38F287EBA83005C11AA /* StubAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE1A38E287EBA83005C11AA /* StubAPIClient.swift */; };
+		1EE1A391287EBA9E005C11AA /* FixtureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE1A390287EBA9E005C11AA /* FixtureLoader.swift */; };
+		1EE1A3C9287EC10E005C11AA /* ProcessInfo+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE1A3C8287EC10E005C11AA /* ProcessInfo+Extension.swift */; };
+		1EE1A3CE287EC4ED005C11AA /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE1A3CD287EC4ED005C11AA /* Color+Extension.swift */; };
+		1EE1A3D2287EC74E005C11AA /* AutoLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE1A3D1287EC74E005C11AA /* AutoLoadingIndicator.swift */; };
+		1EEB8E3D2881689800FDABE5 /* get_recipe_detail_hashtags.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB8E392881689800FDABE5 /* get_recipe_detail_hashtags.json */; };
+		1EEB8E3E2881689800FDABE5 /* get_recipe_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB8E3A2881689800FDABE5 /* get_recipe_list.json */; };
+		1EEB8E3F2881689800FDABE5 /* get_recipe_list_hashtags.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB8E3B2881689800FDABE5 /* get_recipe_list_hashtags.json */; };
+		1EEB8E402881689800FDABE5 /* get_recipe_detail.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB8E3C2881689800FDABE5 /* get_recipe_detail.json */; };
+		1EEB8E4228816D5100FDABE5 /* RecipeListSampleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB8E4128816D5100FDABE5 /* RecipeListSampleDataProvider.swift */; };
+		1EF732E8287EB8A600C3AE1D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF732E7287EB8A600C3AE1D /* APIClient.swift */; };
+		1EF732EA287EB8CD00C3AE1D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF732E9287EB8CD00C3AE1D /* APIRequest.swift */; };
+		1EF732EC287EB8E400C3AE1D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF732EB287EB8E400C3AE1D /* HTTPMethod.swift */; };
+		1EF732EE287EB9D200C3AE1D /* GetRecipeListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF732ED287EB9D200C3AE1D /* GetRecipeListRequest.swift */; };
+		1EF732F0287EB9EC00C3AE1D /* GetRecipeHashtagsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF732EF287EB9EC00C3AE1D /* GetRecipeHashtagsRequest.swift */; };
+		1EF732F2287EBA1E00C3AE1D /* GetRecipeDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF732F1287EBA1E00C3AE1D /* GetRecipeDetailRequest.swift */; };
+		1EFD4BFE287ECC6C00B8EB61 /* RecipeListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4BFD287ECC6C00B8EB61 /* RecipeListItem.swift */; };
+		1EFD4C00287ECC9000B8EB61 /* RecipeDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4BFF287ECC9000B8EB61 /* RecipeDetailItem.swift */; };
+		2AF750332A29E95800E11B8E /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF750322A29E95800E11B8E /* RecipeDetailViewModel.swift */; };
+		2AF750352A29E98700E11B8E /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF750342A29E98700E11B8E /* RecipeDetailView.swift */; };
+		C74251102A13596300074EA0 /* RecipeListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742510F2A13596300074EA0 /* RecipeListRow.swift */; };
+		C74251122A14C6AC00074EA0 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74251112A14C6AC00074EA0 /* RecipeListView.swift */; };
+		C74251142A14E9C700074EA0 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74251132A14E9C700074EA0 /* RecipeListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E5FAC09287D563A000C20D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E5FABF0287D563A000C20D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E5FABF7287D563A000C20D9;
+			remoteInfo = MiniCookpad;
+		};
+		1E5FAC13287D563A000C20D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E5FABF0287D563A000C20D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E5FABF7287D563A000C20D9;
+			remoteInfo = MiniCookpad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E09DEC7289268BD005CC56A /* PostRecipeHashtagsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRecipeHashtagsRequest.swift; sourceTree = "<group>"; };
+		1E09DEC928926987005CC56A /* post_recipe_hashtags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = post_recipe_hashtags.json; sourceTree = "<group>"; };
+		1E36D5D328927D05009DD683 /* AddRecipeHashtagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeHashtagsView.swift; sourceTree = "<group>"; };
+		1E36D5D528928111009DD683 /* AddHashtagsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHashtagsButton.swift; sourceTree = "<group>"; };
+		1E5FABF8287D563A000C20D9 /* MiniCookpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniCookpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E5FABFB287D563A000C20D9 /* MiniCookpadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCookpadApp.swift; sourceTree = "<group>"; };
+		1E5FABFD287D563A000C20D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E5FABFF287D563A000C20D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E5FAC02287D563A000C20D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E5FAC08287D563A000C20D9 /* MiniCookpadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniCookpadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E5FAC0C287D563A000C20D9 /* MiniCookpadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCookpadTests.swift; sourceTree = "<group>"; };
+		1E5FAC12287D563A000C20D9 /* MiniCookpadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniCookpadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E5FAC16287D563A000C20D9 /* MiniCookpadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCookpadUITests.swift; sourceTree = "<group>"; };
+		1E5FAC18287D563A000C20D9 /* MiniCookpadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCookpadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EC972B8289106C400985624 /* Hashtag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashtag.swift; sourceTree = "<group>"; };
+		1EE1A38E287EBA83005C11AA /* StubAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubAPIClient.swift; sourceTree = "<group>"; };
+		1EE1A390287EBA9E005C11AA /* FixtureLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureLoader.swift; sourceTree = "<group>"; };
+		1EE1A3C8287EC10E005C11AA /* ProcessInfo+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+Extension.swift"; sourceTree = "<group>"; };
+		1EE1A3CD287EC4ED005C11AA /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		1EE1A3D1287EC74E005C11AA /* AutoLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLoadingIndicator.swift; sourceTree = "<group>"; };
+		1EEB8E392881689800FDABE5 /* get_recipe_detail_hashtags.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = get_recipe_detail_hashtags.json; sourceTree = "<group>"; };
+		1EEB8E3A2881689800FDABE5 /* get_recipe_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = get_recipe_list.json; sourceTree = "<group>"; };
+		1EEB8E3B2881689800FDABE5 /* get_recipe_list_hashtags.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = get_recipe_list_hashtags.json; sourceTree = "<group>"; };
+		1EEB8E3C2881689800FDABE5 /* get_recipe_detail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = get_recipe_detail.json; sourceTree = "<group>"; };
+		1EEB8E4128816D5100FDABE5 /* RecipeListSampleDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListSampleDataProvider.swift; sourceTree = "<group>"; };
+		1EF732E7287EB8A600C3AE1D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		1EF732E9287EB8CD00C3AE1D /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		1EF732EB287EB8E400C3AE1D /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		1EF732ED287EB9D200C3AE1D /* GetRecipeListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipeListRequest.swift; sourceTree = "<group>"; };
+		1EF732EF287EB9EC00C3AE1D /* GetRecipeHashtagsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipeHashtagsRequest.swift; sourceTree = "<group>"; };
+		1EF732F1287EBA1E00C3AE1D /* GetRecipeDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipeDetailRequest.swift; sourceTree = "<group>"; };
+		1EFD4BFD287ECC6C00B8EB61 /* RecipeListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListItem.swift; sourceTree = "<group>"; };
+		1EFD4BFF287ECC9000B8EB61 /* RecipeDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailItem.swift; sourceTree = "<group>"; };
+		2AF750322A29E95800E11B8E /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
+		2AF750342A29E98700E11B8E /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		C742510F2A13596300074EA0 /* RecipeListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRow.swift; sourceTree = "<group>"; };
+		C74251112A14C6AC00074EA0 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
+		C74251132A14E9C700074EA0 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E5FABF5287D563A000C20D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E5FAC05287D563A000C20D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E5FAC0F287D563A000C20D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E36D5D228927C5C009DD683 /* AddRecipeHashtags */ = {
+			isa = PBXGroup;
+			children = (
+				1E36D5D328927D05009DD683 /* AddRecipeHashtagsView.swift */,
+			);
+			path = AddRecipeHashtags;
+			sourceTree = "<group>";
+		};
+		1E5FABEF287D563A000C20D9 = {
+			isa = PBXGroup;
+			children = (
+				1E5FABFA287D563A000C20D9 /* MiniCookpad */,
+				1E5FAC0B287D563A000C20D9 /* MiniCookpadTests */,
+				1E5FAC15287D563A000C20D9 /* MiniCookpadUITests */,
+				1E5FABF9287D563A000C20D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E5FABF9287D563A000C20D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E5FABF8287D563A000C20D9 /* MiniCookpad.app */,
+				1E5FAC08287D563A000C20D9 /* MiniCookpadTests.xctest */,
+				1E5FAC12287D563A000C20D9 /* MiniCookpadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E5FABFA287D563A000C20D9 /* MiniCookpad */ = {
+			isa = PBXGroup;
+			children = (
+				1EE1A3CF287EC674005C11AA /* Entity */,
+				1EE1A3CC287EC4C9005C11AA /* Extension */,
+				1EE1A3C5287EC0D8005C11AA /* Library */,
+				1EF732E3287EB78300C3AE1D /* Networking */,
+				1EE1A3D0287EC737005C11AA /* View */,
+				1E5FABFB287D563A000C20D9 /* MiniCookpadApp.swift */,
+				1E5FABFD287D563A000C20D9 /* ContentView.swift */,
+				1E5FABFF287D563A000C20D9 /* Assets.xcassets */,
+				1E5FAC01287D563A000C20D9 /* Preview Content */,
+			);
+			path = MiniCookpad;
+			sourceTree = "<group>";
+		};
+		1E5FAC01287D563A000C20D9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1E5FAC02287D563A000C20D9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E5FAC0B287D563A000C20D9 /* MiniCookpadTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E5FAC0C287D563A000C20D9 /* MiniCookpadTests.swift */,
+			);
+			path = MiniCookpadTests;
+			sourceTree = "<group>";
+		};
+		1E5FAC15287D563A000C20D9 /* MiniCookpadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E5FAC16287D563A000C20D9 /* MiniCookpadUITests.swift */,
+				1E5FAC18287D563A000C20D9 /* MiniCookpadUITestsLaunchTests.swift */,
+			);
+			path = MiniCookpadUITests;
+			sourceTree = "<group>";
+		};
+		1EE1A392287EBAC9005C11AA /* Fixture */ = {
+			isa = PBXGroup;
+			children = (
+				1EEB8E392881689800FDABE5 /* get_recipe_detail_hashtags.json */,
+				1EEB8E3C2881689800FDABE5 /* get_recipe_detail.json */,
+				1EEB8E3B2881689800FDABE5 /* get_recipe_list_hashtags.json */,
+				1EEB8E3A2881689800FDABE5 /* get_recipe_list.json */,
+				1E09DEC928926987005CC56A /* post_recipe_hashtags.json */,
+			);
+			path = Fixture;
+			sourceTree = "<group>";
+		};
+		1EE1A3C5287EC0D8005C11AA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1EE1A3C8287EC10E005C11AA /* ProcessInfo+Extension.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1EE1A3CC287EC4C9005C11AA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1EE1A3CD287EC4ED005C11AA /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1EE1A3CF287EC674005C11AA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1EFD4BFF287ECC9000B8EB61 /* RecipeDetailItem.swift */,
+				1EFD4BFD287ECC6C00B8EB61 /* RecipeListItem.swift */,
+				1EC972B8289106C400985624 /* Hashtag.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1EE1A3D0287EC737005C11AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E36D5D228927C5C009DD683 /* AddRecipeHashtags */,
+				1EE1A3D4287EC77A005C11AA /* RecipeDetail */,
+				1EE1A3D3287EC770005C11AA /* RecipeList */,
+				1EE1A3D1287EC74E005C11AA /* AutoLoadingIndicator.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1EE1A3D3287EC770005C11AA /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				C742510F2A13596300074EA0 /* RecipeListRow.swift */,
+				C74251112A14C6AC00074EA0 /* RecipeListView.swift */,
+				C74251132A14E9C700074EA0 /* RecipeListViewModel.swift */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		1EE1A3D4287EC77A005C11AA /* RecipeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1E36D5D528928111009DD683 /* AddHashtagsButton.swift */,
+				2AF750322A29E95800E11B8E /* RecipeDetailViewModel.swift */,
+				2AF750342A29E98700E11B8E /* RecipeDetailView.swift */,
+			);
+			path = RecipeDetail;
+			sourceTree = "<group>";
+		};
+		1EF732E3287EB78300C3AE1D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1EF732E4287EB7B900C3AE1D /* APIClient */,
+				1EF732E5287EB7C200C3AE1D /* Request */,
+				1EF732E6287EB7CD00C3AE1D /* Stub */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1EF732E4287EB7B900C3AE1D /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				1EF732E7287EB8A600C3AE1D /* APIClient.swift */,
+				1EF732E9287EB8CD00C3AE1D /* APIRequest.swift */,
+				1EF732EB287EB8E400C3AE1D /* HTTPMethod.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		1EF732E5287EB7C200C3AE1D /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				1EF732F1287EBA1E00C3AE1D /* GetRecipeDetailRequest.swift */,
+				1EF732EF287EB9EC00C3AE1D /* GetRecipeHashtagsRequest.swift */,
+				1EF732ED287EB9D200C3AE1D /* GetRecipeListRequest.swift */,
+				1E09DEC7289268BD005CC56A /* PostRecipeHashtagsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		1EF732E6287EB7CD00C3AE1D /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				1EE1A392287EBAC9005C11AA /* Fixture */,
+				1EE1A38E287EBA83005C11AA /* StubAPIClient.swift */,
+				1EE1A390287EBA9E005C11AA /* FixtureLoader.swift */,
+				1EEB8E4128816D5100FDABE5 /* RecipeListSampleDataProvider.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E5FABF7287D563A000C20D9 /* MiniCookpad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E5FAC1C287D563A000C20D9 /* Build configuration list for PBXNativeTarget "MiniCookpad" */;
+			buildPhases = (
+				1E5FABF4287D563A000C20D9 /* Sources */,
+				1E5FABF5287D563A000C20D9 /* Frameworks */,
+				1E5FABF6287D563A000C20D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniCookpad;
+			productName = MiniCookpad;
+			productReference = 1E5FABF8287D563A000C20D9 /* MiniCookpad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E5FAC07287D563A000C20D9 /* MiniCookpadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E5FAC1F287D563A000C20D9 /* Build configuration list for PBXNativeTarget "MiniCookpadTests" */;
+			buildPhases = (
+				1E5FAC04287D563A000C20D9 /* Sources */,
+				1E5FAC05287D563A000C20D9 /* Frameworks */,
+				1E5FAC06287D563A000C20D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E5FAC0A287D563A000C20D9 /* PBXTargetDependency */,
+			);
+			name = MiniCookpadTests;
+			productName = MiniCookpadTests;
+			productReference = 1E5FAC08287D563A000C20D9 /* MiniCookpadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E5FAC11287D563A000C20D9 /* MiniCookpadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E5FAC22287D563A000C20D9 /* Build configuration list for PBXNativeTarget "MiniCookpadUITests" */;
+			buildPhases = (
+				1E5FAC0E287D563A000C20D9 /* Sources */,
+				1E5FAC0F287D563A000C20D9 /* Frameworks */,
+				1E5FAC10287D563A000C20D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E5FAC14287D563A000C20D9 /* PBXTargetDependency */,
+			);
+			name = MiniCookpadUITests;
+			productName = MiniCookpadUITests;
+			productReference = 1E5FAC12287D563A000C20D9 /* MiniCookpadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E5FABF0287D563A000C20D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1E5FABF7287D563A000C20D9 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1E5FAC07287D563A000C20D9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1E5FABF7287D563A000C20D9;
+					};
+					1E5FAC11287D563A000C20D9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1E5FABF7287D563A000C20D9;
+					};
+				};
+			};
+			buildConfigurationList = 1E5FABF3287D563A000C20D9 /* Build configuration list for PBXProject "MiniCookpad" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E5FABEF287D563A000C20D9;
+			productRefGroup = 1E5FABF9287D563A000C20D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E5FABF7287D563A000C20D9 /* MiniCookpad */,
+				1E5FAC07287D563A000C20D9 /* MiniCookpadTests */,
+				1E5FAC11287D563A000C20D9 /* MiniCookpadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E5FABF6287D563A000C20D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEB8E3F2881689800FDABE5 /* get_recipe_list_hashtags.json in Resources */,
+				1EEB8E402881689800FDABE5 /* get_recipe_detail.json in Resources */,
+				1E5FAC03287D563A000C20D9 /* Preview Assets.xcassets in Resources */,
+				1E5FAC00287D563A000C20D9 /* Assets.xcassets in Resources */,
+				1EEB8E3E2881689800FDABE5 /* get_recipe_list.json in Resources */,
+				1EEB8E3D2881689800FDABE5 /* get_recipe_detail_hashtags.json in Resources */,
+				1E09DECA28926987005CC56A /* post_recipe_hashtags.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E5FAC06287D563A000C20D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E5FAC10287D563A000C20D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E5FABF4287D563A000C20D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF732EE287EB9D200C3AE1D /* GetRecipeListRequest.swift in Sources */,
+				1EC972B9289106C400985624 /* Hashtag.swift in Sources */,
+				1E36D5D428927D05009DD683 /* AddRecipeHashtagsView.swift in Sources */,
+				1EE1A3CE287EC4ED005C11AA /* Color+Extension.swift in Sources */,
+				C74251122A14C6AC00074EA0 /* RecipeListView.swift in Sources */,
+				C74251102A13596300074EA0 /* RecipeListRow.swift in Sources */,
+				1EEB8E4228816D5100FDABE5 /* RecipeListSampleDataProvider.swift in Sources */,
+				1E09DEC8289268BD005CC56A /* PostRecipeHashtagsRequest.swift in Sources */,
+				1EFD4BFE287ECC6C00B8EB61 /* RecipeListItem.swift in Sources */,
+				1EF732F0287EB9EC00C3AE1D /* GetRecipeHashtagsRequest.swift in Sources */,
+				1EE1A3D2287EC74E005C11AA /* AutoLoadingIndicator.swift in Sources */,
+				1EE1A391287EBA9E005C11AA /* FixtureLoader.swift in Sources */,
+				1E5FABFE287D563A000C20D9 /* ContentView.swift in Sources */,
+				1EE1A3C9287EC10E005C11AA /* ProcessInfo+Extension.swift in Sources */,
+				1E36D5D628928111009DD683 /* AddHashtagsButton.swift in Sources */,
+				1EE1A38F287EBA83005C11AA /* StubAPIClient.swift in Sources */,
+				2AF750352A29E98700E11B8E /* RecipeDetailView.swift in Sources */,
+				1EF732F2287EBA1E00C3AE1D /* GetRecipeDetailRequest.swift in Sources */,
+				1E5FABFC287D563A000C20D9 /* MiniCookpadApp.swift in Sources */,
+				1EFD4C00287ECC9000B8EB61 /* RecipeDetailItem.swift in Sources */,
+				C74251142A14E9C700074EA0 /* RecipeListViewModel.swift in Sources */,
+				2AF750332A29E95800E11B8E /* RecipeDetailViewModel.swift in Sources */,
+				1EF732EA287EB8CD00C3AE1D /* APIRequest.swift in Sources */,
+				1EF732EC287EB8E400C3AE1D /* HTTPMethod.swift in Sources */,
+				1EF732E8287EB8A600C3AE1D /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E5FAC04287D563A000C20D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E5FAC0D287D563A000C20D9 /* MiniCookpadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E5FAC0E287D563A000C20D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E5FAC17287D563A000C20D9 /* MiniCookpadUITests.swift in Sources */,
+				1E5FAC19287D563A000C20D9 /* MiniCookpadUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E5FAC0A287D563A000C20D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E5FABF7287D563A000C20D9 /* MiniCookpad */;
+			targetProxy = 1E5FAC09287D563A000C20D9 /* PBXContainerItemProxy */;
+		};
+		1E5FAC14287D563A000C20D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E5FABF7287D563A000C20D9 /* MiniCookpad */;
+			targetProxy = 1E5FAC13287D563A000C20D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E5FAC1A287D563A000C20D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E5FAC1B287D563A000C20D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E5FAC1D287D563A000C20D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniCookpad/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookpad.MiniCookpad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E5FAC1E287D563A000C20D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniCookpad/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookpad.MiniCookpad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E5FAC20287D563A000C20D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookpad.MiniCookpadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniCookpad.app/MiniCookpad";
+			};
+			name = Debug;
+		};
+		1E5FAC21287D563A000C20D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookpad.MiniCookpadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniCookpad.app/MiniCookpad";
+			};
+			name = Release;
+		};
+		1E5FAC23287D563A000C20D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookpad.MiniCookpadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniCookpad;
+			};
+			name = Debug;
+		};
+		1E5FAC24287D563A000C20D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookpad.MiniCookpadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniCookpad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E5FABF3287D563A000C20D9 /* Build configuration list for PBXProject "MiniCookpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E5FAC1A287D563A000C20D9 /* Debug */,
+				1E5FAC1B287D563A000C20D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E5FAC1C287D563A000C20D9 /* Build configuration list for PBXNativeTarget "MiniCookpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E5FAC1D287D563A000C20D9 /* Debug */,
+				1E5FAC1E287D563A000C20D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E5FAC1F287D563A000C20D9 /* Build configuration list for PBXNativeTarget "MiniCookpadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E5FAC20287D563A000C20D9 /* Debug */,
+				1E5FAC21287D563A000C20D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E5FAC22287D563A000C20D9 /* Build configuration list for PBXNativeTarget "MiniCookpadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E5FAC23287D563A000C20D9 /* Debug */,
+				1E5FAC24287D563A000C20D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E5FABF0287D563A000C20D9 /* Project object */;
+}
